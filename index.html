@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Do you have plans for February 14th?</h1>
+        <div class="options">
+            <button onclick="noPlans()">No</button>
+            <button onclick="hasPlans()">Yes</button>
+        </div>
+    </div>
+    
+    <script>
+        function noPlans() {
+            document.body.style.backgroundColor = "#ffceed";
+            document.querySelector("h1").innerHTML = "Will you be my Valentine?";
+            document.querySelector(".options").innerHTML = "<button onclick='celebrate()'>Yes</button><button onclick='celebrate()'>Yes x2</button>";
+        }
+
+        function hasPlans() {
+            alert("Wrong answer >:(");
+            document.body.style.backgroundColor = "#a41e34";
+        }
+
+        function celebrate() {
+            document.body.innerHTML = "<div class='celebration'><h1>YIPPIIIIEEE!!! MWAH MWAH MWAH THANK YOU MY BREEZY &lt;3 &lt;3 &lt;3 PROOOOST!!!</h1><img src='bubu.jpg' alt='Flower'></div>";
+            document.body.style.backgroundColor = "#ffceed";
+        }
+    </script>
+</body>
+</html>
